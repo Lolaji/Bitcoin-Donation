@@ -15,15 +15,15 @@ $ ngrok http 8000
 
 ## Implementation
 
-# Index.php file
+### Index.php file
 
 contain a form for users to input amount
 
-# init_payment.php file
+### init_payment.php file
 
 contains the login to create payment address and when the address is successfully created, it will redirect to payment.php
 
-# payment.php file
+### payment.php file
 
 dispaly the payment information. On this page user will copy the bicoin address generated to make a payment to, and also receive payment notification data sent by blockchain.
 
