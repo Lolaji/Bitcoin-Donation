@@ -1,0 +1,20 @@
+{
+    "name": "lolaji/donation-app",
+    "description": "Donate bitcoin",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Lolaji\\DonationApp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ajibola Salami",
+            "email": "ayo.lolade@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    }
+}
