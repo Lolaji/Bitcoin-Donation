@@ -25,7 +25,7 @@ contains the login to create payment address and when the address is successfull
 
 ### payment.php file
 
-dispaly the payment information. On this page user will copy the bicoin address generated to make a payment to, and also receive payment notification data sent by blockchain.
+display the payment information and receive notification for payment. On this page user will copy the bicoin address generated to make a payment to, and also receive payment notification data sent by blockchain.
 
 
 
