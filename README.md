@@ -33,19 +33,6 @@ Forwarding                    https://cf00-105-112-29-174.ngrok.io -> http://loc
 Connections                   ttl     opn     rt1     rt5     p50     p90                                        
                               17      0       0.00    0.00    0.02    2.07                                       
                                                                                                                  
-HTTP Requests                                                                                                    
--------------                                                                                                    
-                                                                                                                 
-GET  /payment.php              200 OK                                                                            
-GET  /payment.php              200 OK                                                                            
-GET  /payment.php              200 OK                                                                            
-GET  /payment.php              200 OK                                                                            
-GET  /payment.php              200 OK                                                                            
-GET  /payment.php              500 Internal Server Error                                                         
-POST /init_payment.php         302 Found                                                                         
-GET  /payment.php              200 OK                                                                            
-POST /init_payment.php         302 Found                                                                         
-GET  /                         200 OK  
 ```
 
 ## Implementation
