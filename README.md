@@ -1,7 +1,12 @@
 
 ## Installation
 
-1. Open the config.php and add your api token
+1. Create a config.php file, open it and put your api token. You can create and copy it using the follow comand:
+
+```sh
+$ cp config.example.php config.php
+```
+
 2. Open a terminal and run the following command (you can also use local server like xampp, nginx etc. to serve this): 
 
 ```sh
