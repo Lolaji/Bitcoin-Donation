@@ -43,11 +43,11 @@ contain a form for users to input amount
 
 ### init_payment.php file
 
-contains the login to create payment address and when the address is successfully created, it will redirect to payment.php
+contains the logic to create payment address and when the address is successfully created, it will redirect to payment.php
 
 ### payment.php file
 
-display the payment information and receive notification for payment. On this page user will copy the bicoin address generated to make a payment to, and also receive payment notification data sent by blockchain.
+display the payment information and receive notification for payment. On this page user will copy the bitcoin address generated to make a payment to, and also receive payment notification data sent by blockchain.
 
 
 
