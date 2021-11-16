@@ -9,8 +9,9 @@
                // $order = 
                $cont = new Controller($token);
                $resp = $cont->donate($order_id, $amount);
+               $result = insert($order_id, $resp->index, $amount, $resp->address);
                $_SESSION['payment_data'] = $resp;
-               $cont->redirect(urldecode($resp->callback));
+               $cont->redirect(urldecode("/payment.php?order_id=$resp->index"));
                die();
           } else {
                echo "Amount field is required";
