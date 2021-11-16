@@ -5,7 +5,7 @@
 
      require 'config.php';
      $cont = new src\Controller($token);
-     $sess = $_SESSION['payment_data'] ?? die("Unable to get payment data.");
+     $sess = $_SESSION['payment_data'] ?? null;
 
      if (isset($_GET['transaction_hash'])) {
           $invoice_id = $_GET['order_id']; //invoice_id is passed back to the callback URL
@@ -36,10 +36,14 @@
 </head>
 <body>
      <div align="center" style="padding-top: 4%;">
-          <h3>Payment Page</h3>
-          <p>Donation ID: <?= $_GET['order_id'] ?></p>
-          <p>Payment Amount: BTC <?= $_GET['amount'] ?></p>
-          <p>Payment Address: <?= $sess->address ?></p>
+          <?php if (!is_null($sess)): ?>
+               <h3>Payment Page</h3>
+               <p>Donation ID: <?= $_GET['order_id'] ?></p>
+               <p>Payment Amount: BTC <?= $_GET['amount'] ?></p>
+               <p>Payment Address: <?= $sess->address ?></p>
+          <?php else: ?>
+               <h4>You must fill out the <a href="/">form here</a> before you can access this page.</h4>
+          <?php endif; ?>
 
      </div>
 </body>
